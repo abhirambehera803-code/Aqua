@@ -1,0 +1,6 @@
+{
+  "name": "AquaMind",
+  "description": "Drink Water. Remember Everything. A modern hydration tracker, habit booster, and smart reminders app with cross-platform PWA support and wearable health sync.",
+  "requestFramePermissions": ["notifications"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

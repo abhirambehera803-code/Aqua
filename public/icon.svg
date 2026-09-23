@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+    <linearGradient id="dropGrad" x1="256" y1="110" x2="256" y2="390" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="highlightGrad" x1="220" y1="160" x2="270" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+    <filter id="shadow" x="120" y="80" width="272" height="340" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#0c4a6e" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- Rounded App Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Inner Soft Ring -->
+  <circle cx="256" cy="256" r="210" stroke="#ffffff" stroke-opacity="0.12" stroke-width="4" fill="none" />
+
+  <!-- Main Droplet with Shadow -->
+  <g filter="url(#shadow)">
+    <path d="M256 120 C256 120 160 252 160 318 C160 371 203 414 256 414 C309 414 352 371 352 318 C352 252 256 120 256 120 Z" fill="url(#dropGrad)" />
+  </g>
+
+  <!-- Droplet Gloss Highlight -->
+  <path d="M256 142 C256 142 184 254 184 314 C184 330 190 345 200 357 C192 345 188 331 188 316 C188 262 250 162 256 142 Z" fill="#ffffff" fill-opacity="0.5" />
+  
+  <!-- Droplet Core Sparkle / Ring Indicator -->
+  <circle cx="256" cy="326" r="28" fill="#ffffff" fill-opacity="0.25" />
+  <circle cx="274" cy="310" r="10" fill="#ffffff" fill-opacity="0.7" />
+  <circle cx="286" cy="296" r="4" fill="#ffffff" fill-opacity="0.9" />
+</svg>
